@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🇩🇪 DeutschPower | Nemis tili</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>🇩🇪 DeutschPower</h1>
+            <p>Nemis tilini professional o'rganish platformasi</p>
+            <div class="user-stats">
+                <span id="userXp">⭐ 0 XP</span>
+                <span id="userStreak">🔥 1 kun</span>
+            </div>
+        </header>
+
+        <main>
+            <section class="card-section">
+                <h2>Flashcards (So'z yodlash)</h2>
+                <div class="flashcard" id="flashcard">
+                    <span id="wordDe">Guten Tag</span>
+                    <span id="wordUz" class="hidden">Salom</span>
+                </div>
+                <button id="nextCardBtn" class="btn">Keyingi so'z ➔</button>
+            </section>
+
+            <section class="quiz-section">
+                <h2>Mini Quiz</h2>
+                <p id="quizQuestion">"Danke" so'zining ma'nosi nima?</p>
+                <div class="options" id="quizOptions">
+                    <button class="option-btn" data-correct="true">Rahmat</button>
+                    <button class="option-btn" data-correct="false">Xayr</button>
+                    <button class="option-btn" data-correct="false">Salom</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
